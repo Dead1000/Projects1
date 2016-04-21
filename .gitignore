@@ -1,0 +1,35 @@
+*.userprefs
+*.swp
+*.nupkg
+
+#build folders
+[Bb]in/
+[Oo]bj/
+
+# nunit packages
+packages/
+
+#test folders
+[Tt]est[Rr]esults/
+[Tt]est-[Rr]esults/
+
+#tmp files
+.DS_Store
+
+#generated files
+Resource.designer.cs
+
+#doxygen output
+html/
+debug.txt
+ExternalLibs/19.0.1
+ExternalLibs/15
+ExternalLibs/19.1.0
+ExternalLibs/res
+*.scc
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*.Cache
+[#].
