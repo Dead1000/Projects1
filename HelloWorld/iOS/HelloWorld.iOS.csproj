@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{F49A8D11-70B2-4EFE-B162-0E7BFAF05C5A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HelloWorld.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>HelloWorld.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFastDev>true</MtouchFastDev>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchDebug>true</MtouchDebug>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.1.3.5.6335\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.3.5.6335\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.3.5.6335\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld\HelloWorld.csproj">
+      <Project>{A4085AFB-7970-4626-81AB-180AD8456760}</Project>
+      <Name>HelloWorld</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Picture1.jpg" />
+    <BundleResource Include="Resources\troll.jpg" />
+    <BundleResource Include="Resources\Bild1.png" />
+    <BundleResource Include="Resources\Bild2.jpg" />
+    <BundleResource Include="Resources\Bild11.jpg" />
+    <BundleResource Include="Resources\Bild22.jpg" />
+    <BundleResource Include="Resources\Bild33.jpeg" />
+    <BundleResource Include="Resources\Bild44.jpg" />
+    <BundleResource Include="Resources\Bild55.jpg" />
+    <BundleResource Include="Resources\Bild66.jpg" />
+    <BundleResource Include="Resources\Bild77.jpg" />
+    <BundleResource Include="Resources\Bild88.jpg" />
+    <BundleResource Include="Resources\Bild99.jpeg" />
+    <BundleResource Include="Resources\Bild1010.gif" />
+    <BundleResource Include="Resources\Bild1111.gif" />
+    <BundleResource Include="Resources\Bild1212.jpg" />
+    <BundleResource Include="Resources\Bild1313.jpg" />
+    <BundleResource Include="Resources\Bild1414.jpg" />
+    <BundleResource Include="Resources\images-2.jpeg" />
+    <BundleResource Include="Resources\images-3.jpeg" />
+    <BundleResource Include="Resources\images-4.jpeg" />
+    <BundleResource Include="Resources\images-5.jpeg" />
+    <BundleResource Include="Resources\images-6.jpeg" />
+    <BundleResource Include="Resources\images-7.jpeg" />
+    <BundleResource Include="Resources\images-8.jpeg" />
+    <BundleResource Include="Resources\images-9.jpeg" />
+    <BundleResource Include="Resources\images-10.jpeg" />
+    <BundleResource Include="Resources\images-11.jpeg" />
+    <BundleResource Include="Resources\images-12.jpeg" />
+    <BundleResource Include="Resources\images-13.jpeg" />
+    <BundleResource Include="Resources\images-14.jpeg" />
+    <BundleResource Include="Resources\images-15.jpeg" />
+    <BundleResource Include="Resources\images-16.jpeg" />
+    <BundleResource Include="Resources\images-17.jpeg" />
+    <BundleResource Include="Resources\Gta5.jpg" />
+    <BundleResource Include="Resources\Bo3.jpg" />
+    <BundleResource Include="Resources\Fifa.jpg" />
+    <BundleResource Include="Resources\Mc.jpg" />
+    <BundleResource Include="Resources\Mario.jpg" />
+    <BundleResource Include="Resources\Sims.jpg" />
+    <BundleResource Include="Resources\Ausdauer.jpg" />
+    <BundleResource Include="Resources\Kraft.jpg" />
+    <BundleResource Include="Resources\Kampf.jpg" />
+    <BundleResource Include="Resources\Action.jpg" />
+    <BundleResource Include="Resources\romance.jpg" />
+    <BundleResource Include="Resources\1.jpeg" />
+    <BundleResource Include="Resources\2.jpeg" />
+    <BundleResource Include="Resources\3.jpeg" />
+    <BundleResource Include="Resources\4.jpeg" />
+    <BundleResource Include="Resources\5.jpeg" />
+    <BundleResource Include="Resources\6.jpeg" />
+    <BundleResource Include="Resources\7.jpeg" />
+    <BundleResource Include="Resources\8.jpeg" />
+    <BundleResource Include="Resources\9.jpeg" />
+    <BundleResource Include="Resources\10.jpeg" />
+    <BundleResource Include="Resources\11.jpeg" />
+    <BundleResource Include="Resources\12.jpeg" />
+    <BundleResource Include="Resources\13.jpeg" />
+    <BundleResource Include="Resources\14.jpeg" />
+    <BundleResource Include="Resources\15.jpeg" />
+    <BundleResource Include="Resources\16.jpeg" />
+    <BundleResource Include="Resources\17.jpeg" />
+    <BundleResource Include="Resources\images-19.jpeg" />
+    <BundleResource Include="Resources\images-20.jpeg" />
+    <BundleResource Include="Resources\images-21.jpeg" />
+    <BundleResource Include="Resources\images-22.jpeg" />
+    <BundleResource Include="Resources\images-23.jpeg" />
+    <BundleResource Include="Resources\images-24.jpeg" />
+    <BundleResource Include="Resources\images-25.jpeg" />
+    <BundleResource Include="Resources\images-26.jpeg" />
+    <BundleResource Include="Resources\images-27.jpeg" />
+    <BundleResource Include="Resources\images-28.jpeg" />
+    <BundleResource Include="Resources\images-29.jpeg" />
+    <BundleResource Include="Resources\images-30.jpeg" />
+    <BundleResource Include="Resources\images-31.jpeg" />
+    <BundleResource Include="Resources\images-32.jpeg" />
+    <BundleResource Include="Resources\images-33.jpeg" />
+    <BundleResource Include="Resources\images-34.jpeg" />
+    <BundleResource Include="Resources\images-35.jpeg" />
+    <BundleResource Include="Resources\images-36.jpeg" />
+    <BundleResource Include="Resources\images-37.jpeg" />
+    <BundleResource Include="Resources\images-38.jpeg" />
+    <BundleResource Include="Resources\images-39.jpeg" />
+    <BundleResource Include="Resources\images-40.jpeg" />
+    <BundleResource Include="Resources\images-41.jpeg" />
+    <BundleResource Include="Resources\images-42.jpeg" />
+    <BundleResource Include="Resources\images-43.jpeg" />
+    <BundleResource Include="Resources\images-44.jpeg" />
+    <BundleResource Include="Resources\images-45.jpeg" />
+    <BundleResource Include="Resources\images-46.jpeg" />
+    <BundleResource Include="Resources\images-47.jpeg" />
+    <BundleResource Include="Resources\images-48.jpeg" />
+    <BundleResource Include="Resources\images-49.jpeg" />
+    <BundleResource Include="Resources\images-50.jpeg" />
+    <BundleResource Include="Resources\images-51.jpeg" />
+    <BundleResource Include="Resources\images-52.jpeg" />
+    <BundleResource Include="Resources\images-53.jpeg" />
+    <BundleResource Include="Resources\images-54.jpeg" />
+    <BundleResource Include="Resources\images-55.jpeg" />
+    <BundleResource Include="Resources\images-56.jpeg" />
+    <BundleResource Include="Resources\images-57.jpeg" />
+    <BundleResource Include="Resources\images-58.jpeg" />
+    <BundleResource Include="Resources\images-59.jpeg" />
+    <BundleResource Include="Resources\images-60.jpeg" />
+    <BundleResource Include="Resources\images-61.jpeg" />
+    <BundleResource Include="Resources\images-62.jpeg" />
+    <BundleResource Include="Resources\images-63.jpeg" />
+    <BundleResource Include="Resources\images.jpeg" />
+  </ItemGroup>
+</Project>
