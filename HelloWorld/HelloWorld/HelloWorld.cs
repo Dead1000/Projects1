@@ -2519,7 +2519,6 @@ namespace HelloWorld
                 Command = new Command(() => Navigation.PushAsync(new pageVer1())),
             };
 
-
             Content = new StackLayout
             {
                 Children =
@@ -2575,7 +2574,6 @@ namespace HelloWorld
                 Command = new Command(() => Navigation.PushAsync(new pageVer7())),
             };
  
-
             Content = new StackLayout
             {
                 Children =
@@ -3523,8 +3521,6 @@ namespace HelloWorld
             {
                 Text = "4. Force"
             };
-
-
             Content = new StackLayout
             {
                 Children =
