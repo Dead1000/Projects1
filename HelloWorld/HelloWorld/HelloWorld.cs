@@ -2013,24 +2013,6 @@ namespace HelloWorld
         }
     }
 
-    //    public class KNS : ContentPage
-    //    {
-    //        public KNS()
-    //        {
-    //            var si = new Label
-    //            {
-    //                Text = "Ayano und Kazuma sind beides Mitglieder der Kannagi-Familie, einer Familie mit großer Macht über die Feuermagie. Während bei Ayano, der Erbin, diese Macht sehr stark ausgeprägt ist, fehlt Kazuma dafür jegliche Fähigkeit. Nachdem Ayano ihn aufgrund dessen in einer Zeremonie besiegt, verläßt der in Ungnade gefallene Kazuma seine Familie und ändert seinen Nachnamen in Yagami. 4 Jahre später kehrt er zurück, inzwischen ein mächtiger Beherrscher der Windmagie. Kurz darauf werden einige Mitglieder der Kannagi-Familie von einem Windbeherrscher getötet. Kazuma gerät natürlich sofort in Verdacht und muss sich nun trotz seiner Unschuldsbeteuerungen auf einen erbitterten Kampf mit seiner früheren Familie einstellen."
-    //            };
-    //            Content = new StackLayout
-    //            {
-    //                Children =
-    //                {
-    //                    si
-    //                }
-    //            };
-    //        }
-    //    }
-
     public class TextPage : ContentPage
     {
         protected string text;
@@ -3284,10 +3266,6 @@ namespace HelloWorld
     {
         public pageVerG()
         {
-//            var textgew = new Label
-//            {
-//                Text = "Gewonnen!"
-//            };
             var buttonxD = new Button
             {
                 Text = "Gewonnen!                      Zurück",
@@ -4403,5 +4381,4 @@ namespace HelloWorld
             };
         }
     }
-
 }
