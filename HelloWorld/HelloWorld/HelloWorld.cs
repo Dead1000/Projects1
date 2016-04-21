@@ -2415,7 +2415,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2472,7 +2471,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2529,7 +2527,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2586,7 +2583,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2642,7 +2638,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2698,7 +2693,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2754,7 +2748,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2810,7 +2803,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2866,7 +2858,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2922,7 +2913,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -2978,7 +2968,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -3034,7 +3023,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -3090,7 +3078,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -3146,7 +3133,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -3202,7 +3188,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -3258,7 +3243,6 @@ namespace HelloWorld
                     B1, B2, B3, B4, B5, B6, B7, B8
                 }
             };
-
         }
     }
 
@@ -3571,7 +3555,6 @@ namespace HelloWorld
                 Children =
                 {
                     Text1, Text2,
-
                 }
             };
         }
@@ -3595,7 +3578,6 @@ namespace HelloWorld
                 Children =
                 {
                     Text1, Text2,
-
                 }
             };
         }
@@ -3740,7 +3722,6 @@ namespace HelloWorld
                         Text = "Me against the World-Simple Plan",
                     }
                 }
-
             };
         }
     }
@@ -3896,7 +3877,6 @@ namespace HelloWorld
                 };
             }
         }
-
     }
 
     public class q8 : ButtonPage
