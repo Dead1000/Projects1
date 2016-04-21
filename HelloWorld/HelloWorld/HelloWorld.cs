@@ -82,9 +82,6 @@ namespace HelloWorld
                 Text = "",
             };
            
-
-
-
             changeColorButton.Clicked += delegate
             {
                 if (changeColorButton.BackgroundColor == buttonStartColor)
@@ -95,8 +92,6 @@ namespace HelloWorld
                 {
                     changeColorButton.BackgroundColor = buttonStartColor;
                 }
-
-                
             };
 
             changeColorButton.Clicked += delegate
