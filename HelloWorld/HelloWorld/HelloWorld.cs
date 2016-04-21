@@ -4352,7 +4352,6 @@ namespace HelloWorld
 
     public class ButtonPage : ContentPage
     {
-
         protected Button CreateImageButton(string fileImageSource)
         {
             var Bild = new FileImageSource
