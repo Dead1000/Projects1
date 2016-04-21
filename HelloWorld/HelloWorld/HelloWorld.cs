@@ -88,7 +88,7 @@ namespace HelloWorld
                 {
                     changeColorButton.BackgroundColor = buttonChangeColor;
                 }
-                else
+                else if (1 == 2)
                 {
                     changeColorButton.BackgroundColor = buttonStartColor;
                 }
