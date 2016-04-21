@@ -302,7 +302,6 @@ namespace HelloWorld
                 }
                 Münzen.Image = Ergebnis1;
             };
-
         }
     }
 
@@ -667,13 +666,10 @@ namespace HelloWorld
         }
     };
 
-  
-
     public class pageMoJ : ContentPage
     {
         public pageMoJ()
         {
-
             var y1 = new Button
             {
                 Text = "Mädchen",
@@ -681,7 +677,6 @@ namespace HelloWorld
                 BackgroundColor = Color.Lime,
                 Command = new Command(() => Navigation.PushAsync(new pageM1())),
             };
-
             var n1 = new Button
             {
                 Text = "Junge",
@@ -899,7 +894,6 @@ namespace HelloWorld
     {
         public pageJ3()
         {
-
             var y6 = new Button
             {
                 Text = "…ActionSpiele?",
@@ -1108,12 +1102,10 @@ namespace HelloWorld
         }
     }
 
-
     public class pageM66 : ContentPage
     {
         public pageM66()
         {
-
             var y33 = new Button
             {
                 Text = "Nein",
@@ -1299,7 +1291,6 @@ namespace HelloWorld
     {
         public pageSp()
         {
-
             var ysp = new Button
             {
                 Text = "Richtung Kampf",
@@ -1335,7 +1326,6 @@ namespace HelloWorld
     {
         public pageAc()
         {
-
             var ya123 = new Button
             {
                 Text = "Nein",
@@ -1371,7 +1361,6 @@ namespace HelloWorld
     {
         public pageSSpp()
         {
-
             var yapp = new Button
             {
                 Text = "…Ausdauertraining?",
@@ -1483,7 +1472,6 @@ namespace HelloWorld
     {
         public pageEA()
         {
-
             var ya212 = new Button
             {
                 Text = "Pure Action",
