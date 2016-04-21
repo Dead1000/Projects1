@@ -73,7 +73,7 @@ namespace HelloWorld
             };
             var n1 = new Button
             {
-                Text = "junge",
+                Text = "Junge",
                 TextColor = Color.Green,
                 BackgroundColor = Color.Lime
             };
