@@ -3722,15 +3722,11 @@ namespace HelloWorld
         }
     }
 
-    public class BE : ContentPage
+    public class BE : ButtonPage
     {
         public BE()
         {
-            var B1 = new Button
-            {
-                Text = "Game Starten",
-                Command = new Command(() => Navigation.PushAsync(new q1())),
-            };
+            var B1 = CreatePushButton("Game Starten", new q1());
             Content = new StackLayout
             {
                 Children =
